@@ -34,6 +34,5 @@ def get_image(directory):
 	SPI_SETDESKWALLPAPER = 20
 	ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, image_directory, 0)
 
-
 if __name__ == '__main__':
 	main()
