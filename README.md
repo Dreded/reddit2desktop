@@ -8,7 +8,9 @@ How to use:
 3. In your praw.ini, set the parameters 
 
 [bot]
+
 client_id='your_script_id'
+
 client_scret='your_client_secret'
 
 4. Run the script
