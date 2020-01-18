@@ -14,6 +14,6 @@ client_id='your_script_id'
 
 client_secret='your_client_secret'
 
-4. Run the script
+5. Run the script
 
 If you like it, put it in task scheduler to run every day for a new wallpaper!
