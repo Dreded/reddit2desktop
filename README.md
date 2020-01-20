@@ -8,11 +8,9 @@ How to use:
 2. Create a praw.ini file in the directory you placed the script in
 3. In your praw.ini, set the parameters (you can read more about praw.ini here: https://praw.readthedocs.io/en/latest/getting_started/configuration/prawini.html)
 
-[bot]
+Because this is a simple script, here is what it should look like.
 
-client_id='your_script_id'
-
-client_secret='your_client_secret'
+https://i.imgur.com/pPKLMuw.png
 
 5. Run the script
 
