@@ -33,4 +33,4 @@ If you like it, put it in task scheduler or crontab to run every day for a new w
 If you run the python inside the venv it will have the needed libraries availiable  
 
 i added this to cron(crontab -e) so it runs everyday at 8am:
-- "* 8 * * *~/Python/reddit2desktop/venv/bin/python ~/Python/reddit2desktop/main.py"
+- "* 8 * * * /home/user/Python/reddit2desktop/venv/bin/python /home/user/Python/reddit2desktop/main.py"
