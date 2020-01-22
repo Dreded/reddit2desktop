@@ -1,16 +1,24 @@
 # reddit2desktop
-
+Original Coded by: Evan Nguyen which can be found at: https://github.com/nguyenevan42/reddit2desktop \
+His version is hardcoded to pick the hottest image from /r/wallpapers and only works on windows\
+\
 A simple script that utilizes PRAW to find the hottest X posts of a random list of subs you specify and set it as your desktop wallpaper.\
 Should work in Windows or KDE Plasma\
-The Script will choose 1 image at random from the list of subs you specify and it defaults to randomly selecting one of the top 10 posts.\
+\
+The Script will choose 1 image at random from the list of subs you specify[Setting in Config file]\
+It defaults to randomly selecting one of the top 10 hottest posts.[Setting in Config file]\
 \
 How to use:\
-I would suggest using a venv\
 Either git clone or download and extract zip\
 Enter the folder you created and run...\
-python3 -m venv venv\
-source ./venv/bin/activate\
-pip install -r requirements.txt\
+\
+I would suggest using a venv\
+    python3 -m venv venv\
+    source ./venv/bin/activate\
+    pip install -r requirements.txt\
+\
+Otherwise just globally install the requirements\
+    pip install -r requirements.txt\
 \
 Go to https://www.reddit.com/prefs/apps/ and create a personal script\
 rename reddit2desktop.config.example to reddit2desktop.config and edit contents as needed\
