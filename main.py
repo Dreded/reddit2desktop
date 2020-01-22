@@ -10,7 +10,6 @@ Please Note it only downloads 1 image per run.
 Works in Windows and Linux if using KDE Plasma as DM
 
 '''
-
 import subprocess
 import praw
 import urllib.request
