@@ -8,6 +8,7 @@ It chooses the image from the top 10 hot submissions in the sub(only checks the 
 Please Note it only downloads 1 image per run.
 
 Works in Windows and Linux if using KDE Plasma as DM
+
 '''
 
 import subprocess
