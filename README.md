@@ -3,15 +3,17 @@
 A simple script that utilizes PRAW to find the hottest post of /r/wallpapers and set it as your desktop wallpaper.
 
 How to use:
-1. Install the praw API 
-1. Go to https://www.reddit.com/prefs/apps/ and create a personal script
-2. Create a praw.ini file in the directory you placed the script in
-3. In your praw.ini, set the parameters (you can read more about praw.ini here: https://praw.readthedocs.io/en/latest/getting_started/configuration/prawini.html)
+I would suggest using a venv
+Either git clone or download and extract zip
+Enter the folder you created and run...
+python3 -m venv venv
+source ./venv/bin/activate
+pip install -r requirements.txt
 
-Because this is a simple script, here is what it should look like.
+Go to https://www.reddit.com/prefs/apps/ and create a personal script
+rename reddit2desktop.config.example to reddit2desktop.config and edit contents as needed
 
-https://i.imgur.com/pPKLMuw.png
+Run the script:
+    python3 main.py
 
-5. Run the script
-
-If you like it, put it in task scheduler to run every day for a new wallpaper!
+If you like it, put it in task scheduler or crontab to run every day for a new wallpaper!
