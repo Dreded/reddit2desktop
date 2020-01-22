@@ -25,16 +25,21 @@ import configparser
 
 def getConfig():
 	rootpath = os.path.dirname(os.path.realpath(__file__))
-	dir = os.path.join(rootpath,'data')
+	directory = os.path.join(rootpath,'data')
  
-
-  
 	config = configparser.ConfigParser()
 	configFileLocation = os.path.join(rootpath,'reddit2desktop.config')
+ 
+	#check to see if config file exists
+	if not os.path.exists(configFileLocation):
+		print("\nreddit2desktop.config does not exist in path")
+		print("Did you rename the example config file and add your app secret/id?\n")
+		exit()
+  
 	config.read(configFileLocation)
 
-	if not os.path.exists(dir):
-		os.makedirs(dir)
+	if not os.path.exists(directory):
+		os.makedirs(directory)
 
 	configDict = {}
 	section = 'configuration'
@@ -48,7 +53,7 @@ def getConfig():
 		except:
 			print("exception on %s!" % option)
 			configDict[option] = None
-	configDict.update({'directory': dir})
+	configDict.update({'directory': directory})
 	return configDict
 
 def applyBackground(config):
