@@ -26,6 +26,7 @@ rename reddit2desktop.config.example to reddit2desktop.config and edit contents 
 at the very least you will need to add your client_id and client_secret found on the link above(click edit for secret id is below app name)  
 
 Run the script:
+
 '''
 python3 main.py
 '''
