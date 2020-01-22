@@ -1,0 +1,7 @@
+[configuration]
+how_many_hot: 10
+save_all_images: True
+verbose: True
+my_client_id: YOUR_ID
+my_client_secret: YOUR_SECRET
+subs = wallpaper,wallpapers
