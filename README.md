@@ -13,19 +13,19 @@ Either git clone or download and extract zip\
 Enter the folder you created and run...\
 \
 I would suggest using a venv\
-    python3 -m venv venv\
-    source ./venv/bin/activate\
-    pip install -r requirements.txt\
+    >python3 -m venv venv\
+    >source ./venv/bin/activate\
+    >pip install -r requirements.txt\
 \
 Otherwise just globally install the requirements\
-    pip install -r requirements.txt\
+    >pip install -r requirements.txt\
 \
 Go to https://www.reddit.com/prefs/apps/ and create a personal script\
 rename reddit2desktop.config.example to reddit2desktop.config and edit contents as needed\
 at the very least you will need to add your client_id and client_secret found on the link above(click edit for secret id is below app name)\
 \
 Run the script:\
-    python3 main.py\
+    >python3 main.py\
 \
 If you like it, put it in task scheduler or crontab to run every day for a new wallpaper!\
 If you run the python inside the venv it will have the needed libraries availiable\
