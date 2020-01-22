@@ -2,7 +2,7 @@
 Original Coded by: Evan Nguyen which can be found at: https://github.com/nguyenevan42/reddit2desktop \
 His version is hardcoded to pick the hottest image from /r/wallpapers and only works on windows\
 \
-A simple script that utilizes PRAW to find the hottest X posts of a random list of subs you specify and set it as your desktop wallpaper.\
+A simple script that utilizes PRAW to find the hottest X posts of a random sub from a list of subs you specify and set it as your desktop wallpaper.\
 Should work in Windows or KDE Plasma\
 \
 The Script will choose 1 image at random from the list of subs you specify[Setting in Config file]\
