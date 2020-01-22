@@ -11,6 +11,7 @@ It defaults to randomly selecting one of the top 10 hottest posts.[Setting in Co
 How to use:  
 Either git clone or download and extract zip  
 Enter the folder you created and run...  
+- cd reddit2desktop
 
 I would suggest using a venv
 
