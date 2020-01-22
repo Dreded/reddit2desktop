@@ -26,13 +26,15 @@ import configparser
 def getConfig():
 	rootpath = os.path.dirname(os.path.realpath(__file__))
 	dir = os.path.join(rootpath,'data')
+ 
 
-	if not os.path.exists('data'):
-		os.makedirs('data')
   
 	config = configparser.ConfigParser()
-	configFileLocation = os.path.join(rootpath,'reddit2desktop.config.example')
+	configFileLocation = os.path.join(rootpath,'reddit2desktop.config')
 	config.read(configFileLocation)
+
+	if not os.path.exists(dir):
+		os.makedirs(dir)
 
 	configDict = {}
 	section = 'configuration'
@@ -48,8 +50,6 @@ def getConfig():
 			configDict[option] = None
 	configDict.update({'directory': dir})
 	return configDict
-
-
 
 def applyBackground(config):
     #get some more config options(these two are added after config file is parsed)
